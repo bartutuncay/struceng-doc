@@ -15,12 +15,53 @@
 - [Linear Dynamic Analysis]()
 - [Nonlinear Static Analysis]()
 
-
-## Modal Pushover Analysis
-***Reference**: An Implementation of Modal Pushover Analysis for Multistory Buildings in Ansys*
+## Load Generator
 
 <u>Pipeline:</u>
 ```mermaid
-flowchart LR
+flowchart TB
 
+    subgraph "Engineering Inputs"
+        E[Input Parameters]
+        Ea[Building Class]
+        Eb[Soil Class]
+        Ec[Members]
+
+        E --> Ea
+        E --> Eb
+        E --> Ec
+    end
+
+    subgraph "Model Definition"
+        A[Model]
+        D[Structural Parameters]
+        B[Mesh]
+
+        A --> D
+        A --> B
+    end
+
+    subgraph "Processing"
+        F[Geometric Segmentation]
+        G[Load Generation]
+
+        B --> F
+        Ec --> F
+        F --> G
+        Ea --> G
+        Eb --> G
+    end
+    
+    subgraph "Model Output"
+        H[Equivalent Lateral Force]
+        I[Model with Loads]
+
+        D --> H
+        B --> H
+        G --> H
+        H --> I
+    end
 ```
+
+## Modal Pushover Analysis
+***Reference**: An Implementation of Modal Pushover Analysis for Multistory Buildings in Ansys*

@@ -66,6 +66,12 @@ In the *Mechanical* interface, go to: `Geometry -> Surface` and assign thickness
 
 ## Element Types
 
+| Surface | Material | Order | Type
+| --- | --- | --- | --- |
+| Slab | C30/37 Concrete | Linear (Auto) | SHELL181
+| Slab | Rebars | Linear (Auto) | REINF265
+| Walls | Clay Blocks | Linear (Auto) | SHELL181
+
 
 ## Boundary Conditions
 
