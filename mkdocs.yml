@@ -1,5 +1,8 @@
 site_name: StrucEng Documentation
 theme: readthedocs
+plugins:
+  - search
+  - mermaid2
 markdown_extensions:
   - tables
   - pymdownx.arithmatex:
