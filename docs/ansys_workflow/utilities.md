@@ -21,7 +21,7 @@
 ```mermaid
 flowchart TB
 
-    subgraph "Engineering Inputs"
+    subgraph "<u>Engineering Inputs</u>"
         E[Input Parameters]
         Ea[Building Class]
         Eb[Soil Class]
@@ -32,7 +32,7 @@ flowchart TB
         E --> Ec
     end
 
-    subgraph "Model Definition"
+    subgraph "<u>Model Definition</u>"
         A[Model]
         D[Structural Parameters]
         B[Mesh]
@@ -41,7 +41,7 @@ flowchart TB
         A --> B
     end
 
-    subgraph "Processing"
+    subgraph "<u>Processing</u>"
         F[Geometric Segmentation]
         G[Load Generation]
 
@@ -52,9 +52,9 @@ flowchart TB
         Eb --> G
     end
     
-    subgraph "Model Output"
+    subgraph "<u>Model Output</u>"
         H[Equivalent Lateral Force]
-        I[Model with Loads]
+        I[<b>Model with Loads</b>]
 
         D --> H
         B --> H
@@ -62,6 +62,11 @@ flowchart TB
         H --> I
     end
 ```
+
+## Equivalent Lateral Force
+*Go to page:*
+
+- [Load Generation](../plugins/elf.md)
 
 ## Modal Pushover Analysis
 ***Reference**: An Implementation of Modal Pushover Analysis for Multistory Buildings in Ansys*
