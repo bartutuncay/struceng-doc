@@ -27,6 +27,7 @@ Base data class forming the compatibility layer between the [Equivalent Lateral 
     - `2: forward axis-aligned wall`
 
 ### `body_classes`
+- Floor levels
 
 ### `loads`
 
@@ -44,3 +45,6 @@ Inputs:
 - `up_axis`: *str*, world up direction according to the global coordinate system. Obtained automatically from dropdown menu in GUI
 - `right_axis` : *str*, world right-hand-side axis according to the global coordinate system. Most useful for directional analyses. Obtained automatically from dropdown menu in GUI
 
+### `aligned_nodes`
+
+### `point_pairs`
