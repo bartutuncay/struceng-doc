@@ -195,7 +195,7 @@ Connection properties and types are defined in the **Connections** panel.
 
 
 ### Automatic Assignment
-Using the *Find groups* button on the **Connections** 
+Using the *Find groups* button on the **Connections** panel, nodes within 
 
 ### Manual Assignment
 Contact nodes can be manually defined by the user in case of customized local connections.

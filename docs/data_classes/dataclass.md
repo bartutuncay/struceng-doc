@@ -45,6 +45,11 @@ Inputs:
 - `up_axis`: *str*, world up direction according to the global coordinate system. Obtained automatically from dropdown menu in GUI
 - `right_axis` : *str*, world right-hand-side axis according to the global coordinate system. Most useful for directional analyses. Obtained automatically from dropdown menu in GUI
 
+### `horizontal_surfaces`
+Inputs:
+
+- 
+
 ### `aligned_nodes`
 
 ### `point_pairs`
