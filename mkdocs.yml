@@ -5,6 +5,8 @@ plugins:
   - mermaid2
 markdown_extensions:
   - tables
+  - admonition
+  - pymdownx.details
   - pymdownx.arithmatex:
       generic: true
 

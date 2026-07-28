@@ -1,6 +1,6 @@
 # `SeismicNodes`
 
-Base data class forming the compatibility layer between the [Equivalent Lateral Force](../tools/elf.md) module and [Ansys Mechanical](https://www.ansys.com/products/structures/ansys-mechanical) software.
+Base data class forming the compatibility layer between the [Equivalent Lateral Force](../tools/equivalent_lateral_force/elf.md) module and [Ansys Mechanical](https://www.ansys.com/products/structures/ansys-mechanical) software.
 
 ## Attributes
 
