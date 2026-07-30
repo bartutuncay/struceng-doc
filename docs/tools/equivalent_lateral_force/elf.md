@@ -1,6 +1,6 @@
 # Overview
 
-This page describes the load generation and equivalent lateral force-based seismic analysis workflow, following the procedure outlined in the SIA 260 code.
+This page describes the load generation and equivalent lateral force-based seismic analysis workflow, which follows the procedure outlined in the SIA 260 code.
 
 ## Visual overview
 
