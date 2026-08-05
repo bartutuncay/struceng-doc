@@ -7,11 +7,7 @@ gantt
     axisFormat  %b %d
 
     section Debugging
-    Period estimation     :crit, active, period,      2026-07-30, 2d
-
-    section Rework
-    SDOF/MDOF estimation                 :crit, sdof, 2026-07-30, 2d
-    Connections                          :crit, active, 2026-07-30, 2d
+    Verification - RC                   :crit, active, 2026-08-03, 2d
 
     section Visualization
     Implement visualization overlay :crit, overlay, 2026-08-03, 3d
