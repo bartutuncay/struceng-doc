@@ -58,19 +58,41 @@ Define boundary conditions, loads, assign materials, generate mesh
 - `Mortar`: not defined at this stage.
 
 ## Masonry Wall
+The baseline verification case comprises a single, planar masonry wall aligned to the y axis. 
 
-## Geometry
+### Geometry
+The wall follows the geometry, with the units $\{mm, kg, N, s\}$
 
-We follow a simple geometric format which comprises a slab and 4 unreinforced masonry walls. The slab is a $5x5$ m surface located at $z=3$ and the walls are $2x3$ m vertical surfaces whose top edges are centered at each edge of the slab. Geometry is made with *Rhino* and exported as STL, the mesh is imported with the builtin Ansys utility.
+```
+        2000 mm
+    ┌──────────────┐    x
+    │              │    ↑
+    │              │    └──→ y
+    │              │    
+    │              │    
+    │              │ 3000 mm
+    │              │
+    │              │
+    │              │
+    │              │
+    └──────────────┘
+    ▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲
+    ════════════════
+```
+The geometry is modeled in *Discovery* and discretized using *SHELL181* elements with a target edge length of $250 mm$.
 
-Reinforcement is added to the slab in the form of in-plane line-body elements. `Ø12 @ 150mm` rebars are added along X and Z axes.
+### Boundary Conditions and Loads
 
-*<u>Note:</u> Ansys and Rhino use different coordinate conventions, rotate (and scale) geometry if necessary*
 
 ## Masonry Wall + RC Shear Wall
 .
 
 ## RC Slab + Masonry Perimeter Walls
+We follow a simple geometric format which comprises a slab and 4 unreinforced masonry walls. The slab is a $5x5$ m surface located at $z=3$ and the walls are $2x3$ m vertical surfaces whose top edges are centered at each edge of the slab. Geometry is made with *Rhino* and exported as STL, the mesh is imported with the builtin Ansys utility.
+
+Reinforcement is added to the slab in the form of in-plane line-body elements. `Ø12 @ 150mm` rebars are added along X and Z axes.
+
+*<u>Note:</u> Ansys and Rhino use different coordinate conventions, rotate (and scale) geometry if necessary*
 .
 
 ## RC Slab + Masonry Perimeter Walls (Multi-Storey)

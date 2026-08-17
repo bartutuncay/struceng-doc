@@ -17,7 +17,7 @@ This page displays the architecture of the extension and its components. For a d
 - [Processing Scripts](#processing-scripts)
     - [`connections.py`](#connectionsspy)
     - [`loads.py`](#loadspy)
-    - [`shell_verification.py`](#shell_verificationpy)
+    - [`masonry_shell_verification.py`](#shell_verificationpy)
     - [`period_utils.py`](#period_utilspy)
     - [`postprocess.py`](#postprocesspy)
 
@@ -74,7 +74,7 @@ flowchart TD
     subgraph "<u>Processing Scripts</u>"
         C[connections.py]
         L[loads.py]
-        S[shell_verification.py]
+        S[masonry_shell_verification.py]
         PU[period_utils.py]
         PP[postprocess.py]
     end
@@ -122,17 +122,51 @@ Directory for relevant GUI icons.
 ## GUI Functions
 *For process details, go to page:*
 
-- [Analysis](../tools/equivalent_lateral_force/elf.md)
-- [Loads](../tools/loads.md)
-- [Site](../tools/equivalent_lateral_force/elf.md)
-- [Get Stories](../tools/equivalent_lateral_force/elf.md)
-- [Optimize Mesh](../tools/equivalent_lateral_force/elf.md)
-- [Assign Coordinate Systems](../tools/equivalent_lateral_force/elf.md)
-- [Connections](../tools/connections.md)
-- [Estimate Period](../tools/equivalent_lateral_force/elf.md)
-- [SDOF/MDOF Approximation](../tools/equivalent_lateral_force/elf.md)
-- [Verification](../tools/verification.md)
-- [Plot Results](../tools/visualization.md)
+- <a href="../../tools/equivalent_lateral_force/elf.md">
+    <img src="../../media/pref.png" style="height: 2em; vertical-align: middle;">
+    Analysis
+    </a>
+- <a href="../../tools/loads.md">
+    <img src="../../media/loads.png" style="height: 2em; vertical-align: middle;">
+    Loads
+    </a>
+- <a href="../../tools/equivalent_lateral_force/elf.md">
+    <img src="../../media/soil.png" style="height: 2em; vertical-align: middle;">
+    Site
+    </a>
+- <a href="../../tools/equivalent_lateral_force/elf.md">
+    <img src="../../media/stories.png" style="height: 2em; vertical-align: middle;">
+    Get Stories
+    </a>
+- <a href="../../tools/equivalent_lateral_force/elf.md">
+    <img src="../../media/meshopt.png" style="height: 2em; vertical-align: middle;">
+    Optimize Mesh
+    </a>
+- <a href="../../tools/equivalent_lateral_force/elf.md">
+    <img src="../../media/coords.png" style="height: 2em; vertical-align: middle;">
+    Assign Coordinate Systems
+    </a>
+- <a href="../../tools/connections.md">
+    <img src="../../media/conn.png" style="height: 2em; vertical-align: middle;">
+    Connections
+    </a>
+- <a href="../../tools/equivalent_lateral_force/elf.md">
+    <img src="../../media/period.png" style="height: 2em; vertical-align: middle;">
+    Estimate Period
+    </a>
+- <a href="../../tools/equivalent_lateral_force/sdof_mdof.md">
+    <img src="../../media/sdof.png" style="height: 2em; vertical-align: middle;">
+    SDOF/MDOF Approximation
+    </a>
+- <a href="../../tools/verification.md">
+    <img src="../../media/plotting.png" style="height: 2em; vertical-align: middle;">
+    Verification
+    </a>
+- <a href="../../tools/visualization.md">
+    <img src="../../media/overlay.png" style="height: 2em; vertical-align: middle;">
+    Plot Results
+    </a>
+
 
 ## `main.py`
 Acts as the compatibilty layer between ACT and function scripts. Uses lazy function calls and injects API into distributed scripts.
@@ -162,6 +196,9 @@ Includes plotting scripts for drawing spectra, SDOF/MDOF displacement curves and
 ### `visualization.py`
 Plotting scripts for single-surface results. For detailed overview, see [**Visualization**](../tools/visualization.md).
 
+### `material_assignment.py`
+.
+
 ## Processing Scripts
 
 ### `connections.py`
@@ -170,7 +207,7 @@ Functions for identifying corresponding nodes and generating connections via APD
 ### `loads.py`
 Functions for identifying surfaces and applying pre-defined or customized loads in batch. For detailed overview, see [**Loads**](../tools/loads.md).
 
-### `shell_verification.py`
+### `masonry_shell_verification.py`
 Functions for processing element-level FE results and evaluating material failure. For detailed overview, see [**Verification**](../tools/verification.md).
 
 ### `period_utils.py`

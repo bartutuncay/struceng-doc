@@ -55,6 +55,7 @@
     1. Surfaces are aligned to each other and are valid
     2. *(Optional)* surfaces have the correct name
     3. Surfaces have a valid thickness
+    4. Structure is fixed to the ground
 
     <video controls width="100%">
     <source src="../../media/surface_thickness.mp4" type="video/mp4">
@@ -79,8 +80,16 @@
 
 
 ??? note "**Coordinate System Assignment**"
+    <video controls muted width="100%">
+    <source src="../../media/local_coords.mp4" type="video/mp4">
+    Your browser does not support HTML video.
+    </video>
 
 ??? note "**Mesh Optimization**"
+    <video controls muted width="100%">
+    <source src="../../media/mesh_opt.mp4" type="video/mp4">
+    Your browser does not support HTML video.
+    </video>
 
 ### Calculation Parameters
 

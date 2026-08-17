@@ -1,1 +1,3 @@
-# Response Spectrum Analysis / Response History Analysis
+# Response Spectrum Analysis
+
+## 

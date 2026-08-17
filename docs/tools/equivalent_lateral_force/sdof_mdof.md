@@ -1,0 +1,1 @@
+# SDOF / MDOF Approximation

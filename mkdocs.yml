@@ -1,4 +1,4 @@
-site_name: StrucEng Documentation
+site_name: 'StrucEng Seismic Analysis: Documentation'
 theme: readthedocs
 plugins:
   - search
